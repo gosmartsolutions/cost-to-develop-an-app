@@ -1,0 +1,277 @@
+/* GLOBAL */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body, html {
+  background-color: #222;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  padding-bottom: 1em;
+}
+h2 {
+  font-size: 4em;
+  color: #97AB9D;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.6em;
+}
+h6 {
+  font-size: 1.3em;
+}
+
+.panel {
+  color: #333;
+}
+
+.fa {
+  font-size: 4em;
+}
+p .fa {
+  font-size: 1em;
+}
+p.lead {
+  border: 1px solid transparent;
+}
+
+.row.fancy-boxes {
+  padding: 0 15px;
+}
+
+.row.fancy-boxes div {
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.row.fancy-boxes button {
+  margin: 0;
+  border-radius:0;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+
+/* TOP NAVIGATION */
+
+
+.masthead .inner {
+  display: block;
+  float: none;
+  margin: auto;
+}
+
+.masthead {
+  position: static;
+}
+
+.masthead-brand {
+  font-size: 2em;
+}
+
+.masthead-nav {
+  float: none;
+  margin: auto;
+}
+
+.masthead-nav > li > a {
+  border: none;
+}
+
+/* BUTTON STYLES */
+
+.btn-gray {
+  background: #eee;
+  color: #333;
+  border: 1px solid transparent;
+  outline: 0;
+  transition: .2s ease;
+}
+.btn-gray i {
+  padding-top: .3em;
+}
+.btn-gray:hover,
+.btn-gray:active {
+  background: #fff;
+  transition: .2s ease;
+}
+button:focus,
+button:active,
+.btn:focus,
+.btn:active,
+.btn-gray:focus,
+.btn-gray:active {
+  border: 1px solid transparent;
+  outline: 0 !important;
+  border-radius: 0;
+}
+.btn-gray.selected {
+  background: #97AB9D;
+  color: white;
+}
+.btn-gray.selected:hover,
+.btn-gray.selected:active {
+  background: #A7B7AC;
+  color: white;
+  transition: .2s ease;
+}
+
+.btn-blue,
+.btn-blue:active,
+.btn-blue:focus {
+  background: #487ea8;
+  color: white;
+  border-bottom: 3px solid rgba(0,0,0,.2);
+  border-radius: 0;
+  transition: .2s ease;
+}
+.btn-blue:hover {
+  background: #5288B2;
+  color: white;
+}
+
+.btn-block {
+  margin-bottom: 2em;
+}
+
+
+
+/* FORM STYLES */
+
+#basic-modal-content {
+  max-width: 500px;
+  float: none;
+  margin: auto;
+}
+
+form .form-control {
+  font-size: 1.1em;
+  border-radius: 0;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 1.1em;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 1.1em;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 1.1em;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 1.1em;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  font-size: 1.1em;
+}
+
+
+
+/* LIGHTBOX STYLES */
+
+.emailquote {
+  display: none;
+  color: #444;
+}
+.emailquote .btn-block {
+  margin-bottom: 0;
+}
+.emailquote h3 {
+  color: #97AB9D;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
+}
+.emailquote h6 {
+  padding-bottom: 10px;
+}
+
+.featherlight .featherlight-content {
+  max-width: 400px;
+}
+
+
+
+/* ADD PADDING */
+
+.top-pad {
+  padding-top: 2em !important;
+}
+.top-pad-lg {
+  padding-top: 6em !important;
+}
+
+.bottom-pad {
+  padding-bottom: 2em !important;
+}
+
+.right-pad {
+  padding-right: 2em !important;
+}
+
+
+
+/* CUSTOM CALCULATION STYLES */
+
+h5.sub-heading {
+  text-align: left;
+  border-bottom: 2px solid rgba(255,255,255,.3);
+  margin: 0 auto 1em auto;
+  padding-bottom: .3em;
+  padding-top: 2em;
+}
+
+.prices .row div:nth-child(even),
+.total .row div:nth-child(even) {
+  text-align: right;
+}
+
+.prices .row div:nth-child(odd),
+.total .row div:nth-child(odd) {
+  text-align: left;
+}
+
+.prices {
+  font-size: 1.1em;
+}
+
+.prices h5 {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 10px;
+  color: #97AB9D;
+  font-size: 1.2em;
+}
+
+.total {
+  font-size: 1.4em;
+  border-top: 2px solid rgba(255,255,255,.3);
+  border-bottom: 2px solid rgba(255,255,255,.3);
+  padding-top: 10px;
+  color: #97AB9D;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  #step1, #step3 {
+    padding-top: 50px;
+  }
+
+  .site-wrapper {
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  }
+  }
+}

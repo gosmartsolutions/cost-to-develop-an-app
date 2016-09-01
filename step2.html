@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Find out what the cost to develop an app will be with this app development cost calculator. ">
+    <meta name="author" content="Cost To Develop An App & Go Smart Solutions, LLC">
+    <link rel="icon" href="favicon.png">
+    <title>Cost To Develop An App | App Development Cost</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="modal/css/basic.css" rel="stylesheet" media="screen" />
+    <link href="cover.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div id="mainnav" class="masthead clearfix">
+            <div class="inner">
+              <img src="assets/images/logo.png" alt="Cost to Develop an App"><h1 class="sr-only masthead-brand">Cost To Develop An App</h1>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a onClick="reset()" href="#">New Quote</a></li>
+                  <li><a href="http://www.gosmartsolutions.com/mobile-app-development.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div id="step2">
+            <div class="inner cover">
+              <div class="row bottom-pad">
+                <div class="col-lg-9">
+                  <h5 class="sub-heading">App Features</h5>
+                  <div class="row fancy-boxes">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(dashboard, this)" class="btn btn-block btn-gray" value="1500">
+                        <i class="fa fa-tachometer"></i>
+                        <h6>Dashboard</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(userLogin, this)" class="btn btn-block btn-gray" value="1200">
+                        <i class="fa fa-sign-in"></i>
+                        <h6>User Login</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(userProfile, this)" class="btn btn-block btn-gray" value="1400">
+                        <i class="fa fa-user"></i>
+                        <h6>User Profile</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(camera, this)" class="btn btn-block btn-gray" value="1500">
+                        <i class="fa fa-camera"></i>
+                        <h6>Camera</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(map, this)" class="btn btn-block btn-gray" value="1500">
+                        <i class="fa fa-map-marker"></i>
+                        <h6>Location/Map</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(shopping, this)" class="btn btn-block btn-gray" value="4500">
+                        <i class="fa fa-shopping-bag"></i>
+                        <h6>Shopping</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(payment, this)" class="btn btn-block btn-gray" value="1500">
+                        <i class="fa fa-credit-card"></i>
+                        <h6>Payment</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(audio, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-headphones"></i>
+                        <h6>Music/Audio</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(messaging, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-comments-o"></i>
+                        <h6>Messaging</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(search, this)" class="btn btn-block btn-gray" value="1500">
+                        <i class="fa fa-search"></i>
+                        <h6>Search</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(barcode, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-barcode"></i>
+                        <h6>Barcode Reader</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(gallery, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-picture-o"></i>
+                        <h6>Gallery</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(calendar, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-calendar"></i>
+                        <h6>Calendar</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(social, this)" class="btn btn-block btn-gray" value="550">
+                        <i class="fa fa-share-alt"></i>
+                        <h6>Social Sharing</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(rating, this)" class="btn btn-block btn-gray" value="1800">
+                        <i class="fa fa-star-half-o"></i>
+                        <h6>Rating</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(api, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-plug"></i>
+                        <h6>API Integration</h6>
+                      </button>
+                    </div>
+                  </div>
+                  <h5 class="sub-heading">Administration Features</h5>
+                  <div class="row fancy-boxes">
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(userAdmin, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-suitcase"></i>
+                        <h6>User Admin</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(productAdmin, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-truck"></i>
+                        <h6>Product Admin</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(paymentAdmin, this)" class="btn btn-block btn-gray" value="2500">
+                        <i class="fa fa-university"></i>
+                        <h6>Payment Admin</h6>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                      <button onClick="showPrice(reporting, this)" class="btn btn-block btn-gray" value="4500">
+                        <i class="fa fa-pie-chart"></i>
+                        <h6>Reporting</h6>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <h5 class="sub-heading">Cost Breakdown</h5>
+                  <div class="prices">
+                    <h5>Devices</h5>
+                    <div id="iPhone" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>iPhone</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="iPad" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>iPad</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="androidPhone" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>Android Phone</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="androidTablet" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <p>Android Tablet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h5>App Features</h5>
+                    <div id="dashboard" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Dashboard</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="userLogin" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>User Login</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1200</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="userProfile" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>User Profile</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1400</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="camera" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Camera</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="map" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Location/Map</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="shopping" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Shopping</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$4500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="payment" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Payment</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1800</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="audio" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Music/Audio</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="messaging" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Messaging</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="search" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Search</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="barcode" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Barcode Reader</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="gallery" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Gallery</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="calendar" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Calendar</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="social" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Social Sharing</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$550</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="rating" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Rating</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1800</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="api" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>API Integration</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h5>Administration Features</h5>
+                    <div id="userAdmin" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>User Admin</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="productAdmin" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Product Admin</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$2500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="paymentAdmin" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Payment Admin</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$1500</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="reporting" class="hidden">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <p>Reporting</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <p>$4500</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total">
+                  </div>
+                  <div class="top-pad">
+                      <div id="basic-modal"><a class="basic btn btn-lg btn-blue btn-block" href="#">Email This Quote</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Modal -->
+        <div id="basic-modal-content">
+            <h3 class="text-center">Get Your Price Estimate</h3>
+            <h6 class="text-center">Enter your name and email address below, then hit "Send Quote" to have the cost breakdown of your app emailed to you.</h6>
+            <form name="frmSendQuote" id="frmSendQuote" method="post" action="send_quote.php" target="_blank">
+                <div class="form-group">
+                    <label class="sr-only" for="fullName">Name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Name" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Name'">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="emailAddress">Email</label>
+                    <input type="email" class="form-control" id="emailAddress" name="emailAddress" placeholder="Email" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Email'">
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="reportData" name="reportData">
+                    <input type="submit" class="btn btn-block btn-blue" value="Send Quote">
+                </div>
+            </form>
+        </div>
+        <!-- END Modal -->
+
+          <div class="footer">
+            <div class="inner">
+              <p>App development costs will vary greatly depending on the features you need and what devices you want your app developed for. An app that needs to work on IOS and Android will oftentimes cost twice as much. Adding features such as user registration, secure login and leveraging device specific features such as the camera will all increase the cost to develop an app. Needing custom API's developed or needing to leverage 3rd party API's also increase the app development costs. Our app cost calculator only provides estimates based on what you select. To get an accurate quote, please contact us to consult with one of our mobile app developers.</p>
+              <p>&copy; Go Smart Solutions, LLC 2016. All Rights Reserved.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type='text/javascript' src='modal/js/jquery.simplemodal.js'></script>
+    <script type='text/javascript' src='modal/js/basic.js'></script>
+    <script>
+        $("#frmSendQuote").submit(function (e) {
+            window.location.href = 'step3.html';
+
+            //Get items chosen and price of each and add the data to hidden form field
+            var costReportItems = document.querySelectorAll("#step2 .show"); // Assign costReportItems to all queries in the DOM with a class of "show" within the ID "step2"
+            var i;
+            for (i = 0; i < costReportItems.length; i++) {
+                reportData = reportData + costReportItems[i].innerHTML + "<br >";
+            }
+            document.getElementById('reportData').value = reportData;
+
+            var full_name = $("input#fullName").val();
+            var email_address = $("input#emailAddress").val();
+            var report = $("input#reportData").val();
+            var url = "send_quote.php"; // the script where you handle the form input.
+            var dataString = 'fullName=' + full_name + '&emailAddress=' + email_address + '&reportData=' + report;
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: dataString,
+                //success: alert(dataString) // show response from the php script.
+                success: 'Form submitted'
+            });
+            $.modal.close();
+            e.preventDefault(); // stop execution of the actual form submit.
+        });
+    </script>
+    <script src="main.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74835919-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

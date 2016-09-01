@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Find out what the cost to develop an app will be with this app development cost calculator. ">
+    <meta name="author" content="Cost To Develop An App & Go Smart Solutions, LLC">
+    <link rel="icon" href="favicon.png">
+    <title>Cost To Develop An App | App Development Cost</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="modal/css/basic.css" rel="stylesheet" media="screen" />
+    <link href="cover.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div id="mainnav" class="masthead clearfix">
+            <div class="inner">
+              <img src="assets/images/logo.png" alt="Cost to Develop an App"><h1 class="sr-only masthead-brand">Cost To Develop An App</h1>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a onClick="reset()" href="#">New Quote</a></li>
+                  <li><a href="http://www.gosmartsolutions.com/mobile-app-development.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div id="step3">
+            <div class="inner cover">
+              <div class="row">
+                <div class="col-xs-10 col-sm-8 col-lg-6 col-xs-offset-1 col-sm-offset-2 col-lg-offset-3">
+                  <h3>Sweet! Your cost breakdown has been sent to the email you provided. Would you like to hire an app developer for your project?</h3>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="lead">
+                                <br /><br /><a href="http://www.gosmartsolutions.com/mobile-app-development.html#contact" class="btn btn-lg btn-blue btn-block">Get In Touch With An App Developer <i class="fa fa-angle-double-right"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="inner">
+              <p>App development costs will vary greatly depending on the features you need and what devices you want your app developed for. An app that needs to work on IOS and Android will oftentimes cost twice as much. Adding features such as user registration, secure login and leveraging device specific features such as the camera will all increase the cost to develop an app. Needing custom API's developed or needing to leverage 3rd party API's also increase the app development costs. Our app cost calculator only provides estimates based on what you select. To get an accurate quote, please contact us to consult with one of our mobile app developers.</p>
+              <p>&copy; Go Smart Solutions, LLC 2016. All Rights Reserved.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type='text/javascript' src='modal/js/jquery.simplemodal.js'></script>
+    <script type='text/javascript' src='modal/js/basic.js'></script>
+    <script>
+        $("#frmSendQuote").submit(function (e) {
+            window.location.href = 'step3.html';
+
+            //Get items chosen and price of each and add the data to hidden form field
+            var costReportItems = document.querySelectorAll("#step2 .show"); // Assign costReportItems to all queries in the DOM with a class of "show" within the ID "step2"
+            var i;
+            for (i = 0; i < costReportItems.length; i++) {
+                reportData = reportData + costReportItems[i].innerHTML + "<br >";
+            }
+            document.getElementById('reportData').value = reportData;
+
+            var full_name = $("input#fullName").val();
+            var email_address = $("input#emailAddress").val();
+            var report = $("input#reportData").val();
+            var url = "send_quote.php"; // the script where you handle the form input.
+            var dataString = 'fullName=' + full_name + '&emailAddress=' + email_address + '&reportData=' + report;
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: dataString,
+                //success: alert(dataString) // show response from the php script.
+                success: 'Form submitted'
+            });
+            $.modal.close();
+            e.preventDefault(); // stop execution of the actual form submit.
+        });
+    </script>
+    <script src="main.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-74835919-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
